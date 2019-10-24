@@ -1,0 +1,20 @@
+\documentclass{jsarticle}
+\usepackage{amsmath}
+
+\begin{document}
+確率変数$X$に対し$\|X\|_2=\sqrt{E[X^2]}$とおく．
+このとき，2乗可積分な確率変数$X,Y$に対して
+\[ \|X+Y\|_2\leq\|X\|_2+\|Y\|_2 \]
+が成り立つ．実際，Cauchy-Schwarzの不等式より
+\begin{align*}
+\|X+Y\|_2^2
+&=E[(X+Y)^2] \\
+&=E[X^2+2XY+Y^2] \\
+&=\|X\|_2^2+2E[XY]+\|Y\|_2^2 \\
+&\leq\|X\|_2^2+2\|X\|_2\|Y\|_2+\|Y\|_2^2 \\
+&=(\|X\|_2+\|Y\|_2)^2
+\end{align*}
+となることからわかる．
+
+なお，リリースされているPDFはGitHub Actionsによって作成されたものである．
+\end{document}
